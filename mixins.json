@@ -114,6 +114,11 @@
             "name": "promtail",
             "source": "https://github.com/grafana/loki",
             "subdir": "production/promtail-mixin"
+        },
+        {
+            "name": "ingress-nginx",
+            "source": "https://github.com/abrenk/ingress-nginx-mixin",
+            "subdir": ""
         }
     ]
 }

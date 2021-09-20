@@ -1,0 +1,11 @@
+groups:
+- name: ingress-nginx
+  rules:
+  - alert: IngressNginxControllerAbsent
+    annotations:
+      description: TODO
+      summary: NGINX Ingress Controller has disappeared from Prometheus service discovery.
+    expr: absent(up{job="ingress-nginx"})
+    for: 10m
+    labels:
+      severity: critical
